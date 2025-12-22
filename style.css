@@ -1,0 +1,494 @@
+@media (min-width: 700px){
+
+    body{
+
+        background-image: url(Images/fondo.jpg);
+        
+    }
+
+
+
+    .texto1{
+        color: rgb(60, 130, 221);
+        text-align: center;
+        font-size: 150px;
+        display: block;
+        position: static;
+        margin-top: 350px;
+        animation: fadeIn 1s ease-in-out forwards;
+        background-color: white;
+         background-color: white;
+        border-radius: 70px;
+        border: solid 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .texto1anim{
+        color: rgb(60, 130, 221);
+        text-align: center;
+        font-size: 150px;
+        display: block;
+        background-color: white;
+        border-radius: 70px;
+        border: solid 20px;
+        margin-top: 350px;
+        animation: moveUp 0.7s ease-in forwards;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+
+    .cuerpo{
+        display: none;
+        
+
+
+    }
+
+    .cuerpo1{
+
+        display: block;
+        animation: fadeIn 0.5s ease-in forwards;
+        
+        
+        
+        
+    }
+
+
+    .cuerpo1 h1{
+        margin-left: 10px;
+        margin-right: 30%;
+        margin-left: 30%;
+        border: 5px solid #3498db;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+    padding: 20px;
+    background-color: white;
+    }
+
+
+
+    span{
+        color: rgb(60, 130, 221);
+    }
+
+    .fotos{
+        display: none;
+    }
+
+
+    .fotos1{
+        display: flex;
+        position: relative;
+        justify-content: space-evenly;
+
+    }
+
+
+
+    .fotos1 img{
+       width: 250px; 
+       height: 280px ;
+        border-radius: 20px;
+    border: 8px solid white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.425);
+    transition: transform 0.3s ease;
+    animation: fadeIn 0.4s ease-in-out forwards;
+    
+       
+       
+    }
+.fotos1 img:hover{
+
+ transform: scale(1.03);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.350);
+
+
+}
+
+
+.foto1 {
+    width: 20px;
+    
+    
+
+
+}
+
+.btn-modern {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border: 5px solid rgb(60, 130, 221);
+    border-radius: 12px;
+    padding: 14px 32px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 
+        0 2px 10px rgba(0, 0, 0, 0.05),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    position: relative;
+    overflow: hidden;
+   left: 45%;
+   right: 55%;
+}
+
+.btn-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 
+        0 8px 25px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    border-color: rgba(0, 0, 0, 0.12);
+}
+
+.btn-modern:active {
+    transform: translateY(0);
+    box-shadow: 
+        0 2px 5px rgba(0, 0, 0, 0.05),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ANIMACIONES*/
+
+
+    @keyframes fadeIn {
+        
+        from{
+            opacity: 0;
+            
+        }
+
+        to{
+            opacity: 1;
+            
+        }
+        
+
+
+    }
+
+
+    @keyframes moveUp{
+
+        from{
+            transform: translateY(0px);
+            scale: 1;
+
+
+        }
+
+        to{
+            transform: translateY(-700px);
+            scale: 0.5;
+            margin-bottom: -380px;
+
+
+
+        }
+
+
+
+
+    }
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* Versión móvil (menos de 700px) */
+@media (max-width: 699px) {
+    body {
+        background-image: url(Images/fondo.jpg);
+        background-size: cover; /* IMPORTANTE para móvil */
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        width: 100%;
+        overflow-x: hidden; /* Previene scroll horizontal */
+        margin: 0;
+        padding: 0;
+    }
+
+    .texto1 {
+        color: rgb(60, 130, 221);
+        text-align: center;
+        font-size: 60px; /* Reducido de 150px */
+        display: block;
+        position: static;
+        margin-top: 150px; /* Reducido de 350px */
+        animation: fadeIn 1s ease-in-out forwards;
+        background-color: white;
+        border-radius: 35px; /* Reducido proporcionalmente */
+        border: solid 10px; /* Reducido de 20px */
+        margin-left: 5%; /* Reducido de 20% */
+        margin-right: 5%; /* Reducido de 20% */
+        padding: 20px; /* Añadido para mejor espaciado */
+        box-sizing: border-box; /* Incluye borde en ancho */
+    }
+
+    .texto1anim {
+        color: rgb(60, 130, 221);
+        text-align: center;
+        font-size: 60px; /* Reducido de 150px */
+        display: block;
+        background-color: white;
+        border-radius: 35px; /* Reducido proporcionalmente */
+        border: solid 10px; /* Reducido de 20px */
+        margin-top: 150px; /* Reducido de 350px */
+        animation: moveUp 0.7s ease-in forwards;
+        margin-left: 5%; /* Reducido de 20% */
+        margin-right: 5%; /* Reducido de 20% */
+        padding: 20px; /* Añadido */
+        box-sizing: border-box; /* Incluye borde en ancho */
+    }
+
+    .cuerpo {
+        display: none;
+    }
+
+    .cuerpo1 {
+        display: block;
+        animation: fadeIn 0.5s ease-in forwards;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .cuerpo1 h1 {
+        margin: 20px auto; /* Centrado automático */
+        border: 3px solid #3498db; /* Reducido de 5px */
+        border-radius: 10px; /* Reducido de 15px */
+        box-shadow: 0 3px 10px rgba(52, 152, 219, 0.3); /* Reducido */
+        padding: 15px; /* Reducido de 20px */
+        background-color: white;
+        text-align: center;
+        font-size: 1.2rem; /* Ajuste de tamaño de fuente */
+        max-width: 90%; /* Limita el ancho máximo */
+    }
+
+    span {
+        color: rgb(60, 130, 221);
+        font-size: inherit; /* Hereda tamaño del contenedor */
+    }
+
+    .fotos {
+        display: none;
+    }
+
+    .fotos1 {
+        display: flex;
+        flex-direction: column; /* Cambiado a columna para móvil */
+        align-items: center; /* Centrado */
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        gap: 30px; /* Espacio entre fotos */
+    }
+
+    .fotos1 img {
+        width: 90%; /* Porcentaje en lugar de fijo */
+        max-width: 280px; /* Máximo tamaño */
+        height: auto; /* Altura automática */
+        aspect-ratio: 250/280; /* Mantiene proporción original */
+        border-radius: 15px; /* Reducido de 20px */
+        border: 5px solid white; /* Reducido de 8px */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.425); /* Reducido */
+        transition: transform 0.3s ease;
+        animation: fadeIn 0.4s ease-in-out forwards;
+        display: block;
+        margin: 0 auto; /* Centrado */
+    }
+
+    .fotos1 img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.350); /* Reducido */
+    }
+
+    .foto1 {
+        width: auto; /* Ajustado */
+        max-width: 100%; /* No se sale del contenedor */
+    }
+
+    .btn-modern {
+        background: linear-gradient(145deg, #ffffff, #f0f0f0);
+        border: 3px solid rgb(60, 130, 221); /* Reducido de 5px */
+        border-radius: 10px; /* Reducido de 12px */
+        padding: 12px 25px; /* Reducido de 14px 32px */
+        color: #333;
+        font-size: 14px; /* Reducido de 16px */
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 
+            0 2px 8px rgba(0, 0, 0, 0.05), /* Reducido */
+            inset 0 1px 0 rgba(255, 255, 255, 0.8);
+        position: relative;
+        overflow: hidden;
+        display: block;
+        margin: 30px auto; /* Centrado automático */
+        width: 80%; /* Ancho controlado */
+        max-width: 300px; /* Máximo ancho */
+        left: auto; /* Quitamos posicionamiento absoluto */
+        right: auto;
+        text-align: center;
+    }
+
+    .btn-modern:hover {
+        transform: translateY(-2px);
+        box-shadow: 
+            0 6px 20px rgba(0, 0, 0, 0.1), /* Reducido */
+            inset 0 1px 0 rgba(255, 255, 255, 0.9);
+        border-color: rgba(0, 0, 0, 0.12);
+    }
+
+    .btn-modern:active {
+        transform: translateY(0);
+        box-shadow: 
+            0 2px 5px rgba(0, 0, 0, 0.05),
+            inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    }
+
+    /* ANIMACIONES AJUSTADAS PARA MÓVIL */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes moveUp {
+        from {
+            transform: translateY(0px);
+            scale: 1;
+        }
+        to {
+            transform: translateY(-300px); /* Reducido de -700px */
+            scale: 0.7; /* Aumentado de 0.5 para mejor visibilidad */
+            margin-bottom: -150px; /* Reducido de -380px */
+        }
+    }
+}
+
+/* Versión tablet (entre 400px y 699px) */
+@media (min-width: 400px) and (max-width: 699px) {
+    .texto1,
+    .texto1anim {
+        font-size: 70px; /* Un poco más grande para tablets */
+        margin-top: 200px;
+        margin-left: 8%;
+        margin-right: 8%;
+        border-radius: 45px;
+        border: solid 12px;
+    }
+
+    .cuerpo1 h1 {
+        font-size: 1.4rem;
+        max-width: 85%;
+    }
+
+    .fotos1 {
+        flex-direction: row; /* Fila para tablets */
+        flex-wrap: wrap; /* Se ajusta a varias líneas */
+        justify-content: center;
+    }
+
+    .fotos1 img {
+        width: 45%; /* Dos fotos por fila */
+        max-width: 220px;
+    }
+
+    .btn-modern {
+        width: 20%;
+        font-size: 15px;
+        padding: 14px 30px;
+    }
+}
+
+/* Versión móvil muy pequeña (menos de 400px) */
+@media (max-width: 399px) {
+    .texto1,
+    .texto1anim {
+        font-size: 50px; /* Más pequeño para móviles muy pequeños */
+        margin-top: 100px;
+        margin-left: 3%;
+        margin-right: 3%;
+        border-radius: 25px;
+        border: solid 8px;
+        padding: 15px;
+    }
+
+    .cuerpo1 h1 {
+        font-size: 1rem;
+        padding: 10px;
+        margin: 15px auto;
+        max-width: 95%;
+    }
+
+    .fotos1 img {
+        width: 95%;
+        max-width: 250px;
+        border-radius: 12px;
+        border: 4px solid white;
+    }
+
+    .btn-modern {
+        width: 20%;
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+}
+
+/* Ajustes generales para todos los tamaños móviles */
+@media (max-width: 699px) {
+    /* Previene el zoom en inputs en iOS */
+    input, textarea, select {
+        font-size: 16px !important;
+    }
+    
+    /* Mejora el tap en móviles */
+    button, a {
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    /* Optimiza el renderizado */
+    * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
